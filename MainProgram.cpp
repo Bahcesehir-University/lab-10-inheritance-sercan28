@@ -171,7 +171,7 @@ public:
 //       Hint: use std::ostringstream for formatted decimal output
     std::string Car::describe() const{
     std::ostringstream oss;
-    oss<<"Car: "<< make<<"("<<year<<"),"<<numDoors<< " doors, fuel; "<< "%";
+    oss<<"Car: "<< make<<"("<<year<<"), "<<numDoors<< " doors, fuel; "<<fuelLevel<< "%";
     return oss.str();
     }
 
